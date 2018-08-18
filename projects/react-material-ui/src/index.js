@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import Form from './component/form';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const element = <h1>Bismillah</h1>
+
+ReactDOM.render(<Form/>, document.getElementById('root'));
