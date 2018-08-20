@@ -3,6 +3,7 @@ import {
     CssBaseline, Paper, Avatar, Typography, FormControl, InputLabel, Input, Button,
     withStyles
 } from '@material-ui/core';
+import PropTypes from 'prop-types';
 import LockIcon from '@material-ui/icons/LockOutlined';
 
 const styles = theme => ({
@@ -68,5 +69,8 @@ class LoginPage extends Component {
     }
 }
 
+LoginPage.propTypes = {
+    classes: PropTypes.object.isRequired,
+};
 export default withStyles(styles)(LoginPage);
 
